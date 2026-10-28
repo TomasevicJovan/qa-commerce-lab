@@ -1,0 +1,97 @@
+name: qa-commerce
+x-app: &app
+  build: .
+  init: true
+  restart: unless-stopped
+  environment: &env
+    BIND_HOST: 0.0.0.0
+    EVENT_TRANSPORT: kafka
+    KAFKA_BROKERS: kafka:9092
+    BROKER_URL: http://broker:4100
+    IDENTITY_URL: http://identity:4101
+    CATALOG_URL: http://catalog:4102
+    ORDERS_URL: http://orders:4103
+    INVENTORY_URL: http://inventory:4104
+    PAYMENTS_URL: http://payments:4105
+    DATA_DIR: /app/data
+  depends_on:
+    kafka:
+      condition: service_healthy
+  healthcheck:
+    test: [CMD, node, -e, "fetch('http://127.0.0.1:'+({gateway:3000,broker:4100,identity:4101,catalog:4102,orders:4103,inventory:4104,payments:4105}[process.env.SERVICE])+'/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+    interval: 10s
+    timeout: 5s
+    retries: 12
+services:
+  kafka:
+    image: apache/kafka:4.2.2
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:19092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,EXTERNAL://localhost:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_NUM_PARTITIONS: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+    ports: ["127.0.0.1:19092:19092"]
+    volumes: ["kafka-data:/var/lib/kafka/data"]
+    healthcheck:
+      test: [CMD-SHELL, "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 10s
+      retries: 15
+  broker:
+    <<: *app
+    command: [node, services/broker.mjs]
+    environment: { <<: *env, SERVICE: broker }
+    volumes: ["broker-data:/app/data"]
+  identity:
+    <<: *app
+    command: [node, services/service.mjs]
+    environment: { <<: *env, SERVICE: identity }
+    volumes: ["identity-data:/app/data"]
+  catalog:
+    <<: *app
+    command: [node, services/service.mjs]
+    environment: { <<: *env, SERVICE: catalog }
+    volumes: ["catalog-data:/app/data"]
+  orders:
+    <<: *app
+    command: [node, services/service.mjs]
+    environment: { <<: *env, SERVICE: orders }
+    volumes: ["orders-data:/app/data"]
+  inventory:
+    <<: *app
+    command: [node, services/service.mjs]
+    environment: { <<: *env, SERVICE: inventory }
+    volumes: ["inventory-data:/app/data"]
+  payments:
+    <<: *app
+    command: [node, services/service.mjs]
+    environment: { <<: *env, SERVICE: payments }
+    volumes: ["payments-data:/app/data"]
+  gateway:
+    <<: *app
+    command: [node, services/gateway.mjs]
+    environment: { <<: *env, SERVICE: gateway }
+    ports: ["127.0.0.1:3000:3000"]
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000/api/lab/status').then(async r=>{let x=await r.json();process.exit(x.services.every(s=>s.status==='ok')?0:1)}).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 10s
+      retries: 15
+volumes:
+  kafka-data:
+  broker-data:
+  identity-data:
+  catalog-data:
+  orders-data:
+  inventory-data:
+  payments-data:

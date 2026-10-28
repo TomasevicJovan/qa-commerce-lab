@@ -1,0 +1,19 @@
+{
+  "name": "qa-commerce-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local e-commerce QA laboratory with independent services and event-driven checkout",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node services/launch.mjs",
+    "check": "node --check services/service.mjs && node --check public/app.js",
+    "reset": "node services/reset.mjs",
+    "spec": "node services/spec.mjs"
+  },
+  "dependencies": {
+    "kafkajs": "2.2.4"
+  }
+}

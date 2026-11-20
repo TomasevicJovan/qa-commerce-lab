@@ -3,9 +3,10 @@ import { defaults } from './common.mjs';
 const ref=name=>({$ref:`#/components/schemas/${name}`});
 const json=schema=>({'application/json':{schema}});
 const response=(description,schema)=>({description,...(schema?{content:json(schema)}:{})});
-const error=response('Error',{type:'object',properties:{error:{type:'string'}}});
+const error=response('Error',{type:'object',required:['error'],properties:{error:{type:'string'}}});
 const body=schema=>({required:true,content:json(schema)});
-const object=properties=>({type:'object',properties});
+// Every listed property is required unless named in `optional`, so contract tests catch missing fields.
+const object=(properties,optional=[])=>({type:'object',required:Object.keys(properties).filter(k=>!optional.includes(k)),properties});
 const string={type:'string'},integer={type:'integer'};
 const address={type:'object',required:['name','line1','city','postalCode','country'],properties:Object.fromEntries(['name','line1','city','postalCode','country'].map(k=>[k,{type:'string',minLength:1,maxLength:200}]))};
 const paths={};
@@ -23,10 +24,10 @@ add('/orders','get','List own orders',{auth:true,output:{type:'array',items:ref(
 add('/orders','post','Place asynchronous order',{auth:true,code:'202',parameters:[{in:'header',name:'Idempotency-Key',required:true,schema:{type:'string',maxLength:100}}],input:ref('Checkout'),output:ref('Order'),description:'202 for new orders; 200 for replay of the same key and request. Prices in USD cents. Poll GET /orders/{orderId} until terminal. Exact JSON request serialization is the idempotency fingerprint; reuse the exact body when retrying.'});
 paths['/orders'].post.responses['200']=response('Idempotent replay',ref('Order'));
 add('/orders/{orderId}','get','Read own order; another customer receives 404',{auth:true,parameters:[orderParam],output:ref('Order')});
-add('/payments/{orderId}','get','Read payment for own order',{auth:true,parameters:[orderParam],output:object({orderId:string,id:string,status:{type:'string',enum:['pending','approved','failed']},amount:integer,reason:{type:'string',nullable:true},createdAt:{type:'string',format:'date-time'}})});
+add('/payments/{orderId}','get','Read payment for own order',{auth:true,parameters:[orderParam],output:object({orderId:string,id:string,status:{type:'string',enum:['pending','approved','failed']},amount:integer,reason:{type:'string',nullable:true},createdAt:{type:'string',format:'date-time'}},['id','amount','reason','createdAt'])});
 add('/lab/config','get','Read global scenario settings',{output:ref('LabConfig')});add('/lab/config','post','Patch global scenario settings',{input:ref('LabConfig'),output:ref('LabConfig')});
 add('/lab/defaults','post','Restore scenario defaults, retain business data',{output:ref('LabConfig')});
-add('/lab/status','get','Read service health and event processing status',{output:object({transport:{type:'string',enum:['local','kafka']},services:{type:'array',items:object({service:string,status:{type:'string',enum:['ok','degraded','unavailable']},eventError:{type:'string',nullable:true},pendingEvents:integer})}})});
+add('/lab/status','get','Read service health and event processing status',{output:object({transport:{type:'string',enum:['local','kafka']},services:{type:'array',items:object({service:string,status:{type:'string',enum:['ok','degraded','unavailable']},eventError:{type:'string',nullable:true},pendingEvents:integer},['eventError','pendingEvents'])}})});
 add('/lab/events','get','Latest 100 events, newest first',{output:{type:'array',items:ref('Event')}});
 const configProperties=Object.fromEntries(Object.entries(defaults).map(([k,v])=>[k,{type:typeof v==='number'?'integer':typeof v,default:v,...(typeof v==='number'?{minimum:k==='sessionSeconds'?1:0,maximum:k==='sessionSeconds'?86400:5000}:{})}]));
 configProperties.locatorMode.enum=['stable','dynamic'];configProperties.paymentMode.enum=['approve','decline','timeout'];
@@ -35,8 +36,8 @@ const spec={openapi:'3.0.3',info:{title:'QA Commerce Lab API',version:'1.0.0',de
   Product:object({id:string,name:string,category:string,price:{type:'integer',description:'USD cents'},stock:{type:'integer',description:'Initial seed stock only; current availability is GET /inventory'},icon:string,color:string,description:string}),
   CartItem:{type:'object',required:['productId','quantity'],properties:{productId:string,quantity:{type:'integer',minimum:1,maximum:10}}},
   Checkout:{type:'object',required:['address','paymentMethod','expectedTotal'],properties:{address,paymentMethod:{type:'string',enum:['test-card','test-wallet']},coupon:{type:'string',enum:['','SAVE10','EXPIRED']},expectedTotal:{type:'integer',description:'Client calculated total in cents; mismatch returns 409'}}},
-  Order:object({id:string,userId:string,items:{type:'array',items:object({productId:string,name:string,quantity:integer,unitPrice:integer})},address,paymentMethod:string,coupon:string,subtotal:integer,discount:integer,shipping:integer,total:integer,status:{type:'string',enum:['pending','payment_pending','confirmed','rejected','compensating','cancelled']},reason:{type:'string',nullable:true},createdAt:{type:'string',format:'date-time'},updatedAt:{type:'string',format:'date-time'},history:{type:'array',items:object({status:string,at:{type:'string',format:'date-time'},eventId:string})}}),
-  LabConfig:{type:'object',additionalProperties:false,properties:configProperties},Event:object({seq:integer,id:string,originalId:string,type:string,orderId:string,data:{type:'object',additionalProperties:true},createdAt:{type:'string',format:'date-time'}})
+  Order:object({id:string,userId:string,items:{type:'array',items:object({productId:string,name:string,quantity:integer,unitPrice:integer})},address,paymentMethod:string,coupon:string,subtotal:integer,discount:integer,shipping:integer,total:integer,status:{type:'string',enum:['pending','payment_pending','confirmed','rejected','compensating','cancelled']},reason:{type:'string',nullable:true},createdAt:{type:'string',format:'date-time'},updatedAt:{type:'string',format:'date-time'},history:{type:'array',items:object({status:string,at:{type:'string',format:'date-time'},eventId:string},['eventId'])}},['reason']),
+  LabConfig:{type:'object',additionalProperties:false,required:Object.keys(configProperties),properties:configProperties},Event:object({seq:integer,id:string,originalId:string,type:string,orderId:string,data:{type:'object',additionalProperties:true},createdAt:{type:'string',format:'date-time'}},['originalId'])
 }}};
 writeFileSync(new URL('../docs/openapi.json',import.meta.url),JSON.stringify(spec,null,2)+'\n');
 console.log('docs/openapi.json generated');

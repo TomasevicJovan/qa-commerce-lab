@@ -63,6 +63,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -78,6 +81,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -93,6 +99,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -108,6 +117,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -123,6 +135,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -138,6 +153,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -153,6 +171,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -220,6 +241,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -235,6 +259,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -250,6 +277,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -265,6 +295,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -280,6 +313,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -295,6 +331,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -310,6 +349,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -352,6 +394,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -367,6 +412,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -382,6 +430,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -397,6 +448,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -412,6 +466,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -427,6 +484,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -442,6 +502,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -474,6 +537,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "loggedOut"
+                  ],
                   "properties": {
                     "loggedOut": {
                       "type": "boolean"
@@ -489,6 +555,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -504,6 +573,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -519,6 +591,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -534,6 +609,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -549,6 +627,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -564,6 +645,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -579,6 +663,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -657,6 +744,12 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "items",
+                    "total",
+                    "page",
+                    "limit"
+                  ],
                   "properties": {
                     "items": {
                       "type": "array",
@@ -684,6 +777,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -699,6 +795,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -714,6 +813,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -729,6 +831,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -744,6 +849,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -759,6 +867,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -774,6 +885,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -821,6 +935,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -836,6 +953,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -851,6 +971,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -866,6 +989,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -881,6 +1007,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -896,6 +1025,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -911,6 +1043,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -952,6 +1087,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -967,6 +1105,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -982,6 +1123,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -997,6 +1141,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1012,6 +1159,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1027,6 +1177,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1042,6 +1195,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1087,6 +1243,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1102,6 +1261,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1117,6 +1279,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1132,6 +1297,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1147,6 +1315,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1162,6 +1333,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1177,6 +1351,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1242,6 +1419,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1257,6 +1437,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1272,6 +1455,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1287,6 +1473,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1302,6 +1491,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1317,6 +1509,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1332,6 +1527,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1377,6 +1575,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1392,6 +1593,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1407,6 +1611,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1422,6 +1629,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1437,6 +1647,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1452,6 +1665,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1467,6 +1683,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1537,6 +1756,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1552,6 +1774,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1567,6 +1792,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1582,6 +1810,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1597,6 +1828,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1612,6 +1846,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1627,6 +1864,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1678,6 +1918,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1693,6 +1936,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1708,6 +1954,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1723,6 +1972,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1738,6 +1990,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1753,6 +2008,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1768,6 +2026,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1809,6 +2070,10 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "orderId",
+                    "status"
+                  ],
                   "properties": {
                     "orderId": {
                       "type": "string"
@@ -1846,6 +2111,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1861,6 +2129,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1876,6 +2147,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1891,6 +2165,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1906,6 +2183,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1921,6 +2201,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1936,6 +2219,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1974,6 +2260,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -1989,6 +2278,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2004,6 +2296,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2019,6 +2314,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2034,6 +2332,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2049,6 +2350,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2064,6 +2368,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2110,6 +2417,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2125,6 +2435,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2140,6 +2453,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2155,6 +2471,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2170,6 +2489,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2185,6 +2507,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2200,6 +2525,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2238,6 +2566,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2253,6 +2584,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2268,6 +2602,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2283,6 +2620,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2298,6 +2638,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2313,6 +2656,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2328,6 +2674,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2356,6 +2705,10 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "transport",
+                    "services"
+                  ],
                   "properties": {
                     "transport": {
                       "type": "string",
@@ -2368,6 +2721,10 @@
                       "type": "array",
                       "items": {
                         "type": "object",
+                        "required": [
+                          "service",
+                          "status"
+                        ],
                         "properties": {
                           "service": {
                             "type": "string"
@@ -2401,6 +2758,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2416,6 +2776,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2431,6 +2794,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2446,6 +2812,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2461,6 +2830,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2476,6 +2848,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2491,6 +2866,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2532,6 +2910,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2547,6 +2928,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2562,6 +2946,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2577,6 +2964,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2592,6 +2982,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2607,6 +3000,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2622,6 +3018,9 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "required": [
+                    "error"
+                  ],
                   "properties": {
                     "error": {
                       "type": "string"
@@ -2645,6 +3044,12 @@
     "schemas": {
       "User": {
         "type": "object",
+        "required": [
+          "id",
+          "email",
+          "name",
+          "role"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -2662,6 +3067,11 @@
       },
       "Session": {
         "type": "object",
+        "required": [
+          "token",
+          "user",
+          "expiresAt"
+        ],
         "properties": {
           "token": {
             "type": "string"
@@ -2677,6 +3087,16 @@
       },
       "Product": {
         "type": "object",
+        "required": [
+          "id",
+          "name",
+          "category",
+          "price",
+          "stock",
+          "icon",
+          "color",
+          "description"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -2791,6 +3211,22 @@
       },
       "Order": {
         "type": "object",
+        "required": [
+          "id",
+          "userId",
+          "items",
+          "address",
+          "paymentMethod",
+          "coupon",
+          "subtotal",
+          "discount",
+          "shipping",
+          "total",
+          "status",
+          "createdAt",
+          "updatedAt",
+          "history"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -2802,6 +3238,12 @@
             "type": "array",
             "items": {
               "type": "object",
+              "required": [
+                "productId",
+                "name",
+                "quantity",
+                "unitPrice"
+              ],
               "properties": {
                 "productId": {
                   "type": "string"
@@ -2900,6 +3342,10 @@
             "type": "array",
             "items": {
               "type": "object",
+              "required": [
+                "status",
+                "at"
+              ],
               "properties": {
                 "status": {
                   "type": "string"
@@ -2919,6 +3365,19 @@
       "LabConfig": {
         "type": "object",
         "additionalProperties": false,
+        "required": [
+          "locatorMode",
+          "renderDelay",
+          "apiDelay",
+          "paymentMode",
+          "paymentDelay",
+          "pauseInventory",
+          "pausePayments",
+          "duplicateEvents",
+          "stalePrice",
+          "rateLimit",
+          "sessionSeconds"
+        ],
         "properties": {
           "locatorMode": {
             "type": "string",
@@ -2985,6 +3444,14 @@
       },
       "Event": {
         "type": "object",
+        "required": [
+          "seq",
+          "id",
+          "type",
+          "orderId",
+          "data",
+          "createdAt"
+        ],
         "properties": {
           "seq": {
             "type": "integer"

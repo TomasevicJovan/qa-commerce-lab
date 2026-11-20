@@ -1,0 +1,30 @@
+name: Trigger tests
+
+# Every push to main asks qa-commerce-lab-tests to run its suite against this exact commit.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# The default GITHUB_TOKEN is not used; the dispatch is authorised by TESTS_REPO_TOKEN.
+permissions: {}
+
+jobs:
+  dispatch:
+    name: Dispatch lab-updated to qa-commerce-lab-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch
+        env:
+          GH_TOKEN: ${{ secrets.TESTS_REPO_TOKEN }}
+          LAB_SHA: ${{ github.sha }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Secret TESTS_REPO_TOKEN is missing. See the setup steps in qa-commerce-lab-tests/README.md."
+            exit 1
+          fi
+          gh api --method POST repos/TomasevicJovan/qa-commerce-lab-tests/dispatches \
+            -f event_type=lab-updated \
+            -f "client_payload[sha]=$LAB_SHA"
+          echo "Requested a test run for lab commit $LAB_SHA"
+          echo "Follow it at https://github.com/TomasevicJovan/qa-commerce-lab-tests/actions"

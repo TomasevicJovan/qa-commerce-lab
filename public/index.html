@@ -1,10 +1,100 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A local e-commerce laboratory for curious QA engineers."><title>FORMA — QA Commerce Lab</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FORMA: everyday objects for your desk, your home and wherever the day takes you.">
+<title>FORMA: Everyday objects</title>
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.js"></script>
+</head>
 <body>
-<div class="environment"><span><i></i> LOCAL QA ENVIRONMENT</span><span>Test freely. Break thoughtfully.</span><a href="/api/openapi.json" target="_blank" rel="noreferrer">API specification ↗</a></div>
-<header class="header"><a class="brand" href="#shop" aria-label="Forma home">forma<span>®</span></a><nav aria-label="Main navigation"><a href="#shop" data-nav="shop">The collection</a><a href="#orders" data-nav="orders">My orders</a><a href="#lab" data-nav="lab">QA laboratory <span class="nav-badge">LAB</span></a></nav><div class="header-actions"><button id="account" class="text-button">Sign in</button><button id="cart-open" class="cart-button" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button></div></header>
-<main id="main"></main>
-<footer><span class="brand small">forma®</span><span>Everyday objects. Extraordinary test cases.</span><span>QA COMMERCE LAB · v1.0</span></footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-top wrap">
+    <a class="brand" href="#home" aria-label="Forma home">forma<span>®</span></a>
+    <form class="header-search" id="search-form" role="search">
+      <label class="sr-only" for="search">Search products</label>
+      <input id="search" name="q" type="search" placeholder="Search products and categories…" autocomplete="off">
+      <button type="submit" class="search-submit" aria-label="Search">Search</button>
+    </form>
+    <div class="header-actions">
+      <a id="wishlist-open" class="icon-link" href="#wishlist"><span aria-hidden="true">♡</span> Wishlist <span id="wishlist-count" class="count-pill">0</span></a>
+      <div class="account-wrap">
+        <button id="account" class="icon-link" aria-haspopup="true" aria-expanded="false">Sign in</button>
+        <button id="register-open" class="register-button" data-open-register>Create account</button>
+        <div id="account-menu" class="menu" hidden>
+          <a href="#orders" data-menu-link>My orders</a>
+          <a href="#wishlist" data-menu-link>Wishlist</a>
+          <button id="sign-out" type="button">Sign out</button>
+        </div>
+      </div>
+      <button id="cart-open" class="cart-button" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button>
+    </div>
+  </div>
+  <nav class="header-nav" aria-label="Shop navigation">
+    <div class="wrap nav-row">
+      <div class="categories-wrap">
+        <button id="categories-toggle" class="categories-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="categories-menu">☰ All categories <span aria-hidden="true">▾</span></button>
+        <div id="categories-menu" class="menu categories-menu mega" hidden></div>
+      </div>
+      <a class="nav-link deal-link" href="#shop?deal=black-friday" data-nav-link="black-friday">Black Friday</a>
+      <a class="nav-link" href="#shop?freeShipping=true" data-nav-link="free-shipping">Free shipping</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <div id="popular-categories" class="popular-categories" aria-label="Popular categories"></div>
+    </div>
+  </nav>
+  <section class="promo-bar" aria-label="Promotions" aria-roledescription="carousel">
+    <div class="wrap promo-inner">
+      <button class="promo-arrow" id="promo-prev" aria-label="Previous promotion">‹</button>
+      <div id="promo-message" class="promo-message" aria-live="off"></div>
+      <button class="promo-arrow" id="promo-next" aria-label="Next promotion">›</button>
+      <button class="promo-pause" id="promo-pause" aria-pressed="false">Pause</button>
+    </div>
+  </section>
+</header>
+<main id="main" tabindex="-1"></main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand small">forma®</span>
+      <p>Everyday objects. Extraordinary details.</p>
+    </div>
+    <nav aria-label="Shopping help">
+      <h2>Shopping</h2>
+      <ul>
+        <li><a href="#help/notices">Platform notices</a></li>
+        <li><a href="#help/delivery-and-payment">Delivery and payment methods</a></li>
+        <li><a href="#help/test-cards">Test cards</a></li>
+        <li><a href="#help/returns">Complaints and returns</a></li>
+        <li><a href="#help/faq">Frequently asked questions</a></li>
+        <li><a href="#help/how-to-shop">How to shop online</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Your account">
+      <h2>Your account</h2>
+      <ul>
+        <li><a href="#orders">My orders</a></li>
+        <li><a href="#wishlist">Wishlist</a></li>
+        <li><a href="#home" data-open-register>Create an account</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Deals">
+      <h2>Deals</h2>
+      <ul>
+        <li><a href="#shop?deal=black-friday">Black Friday</a></li>
+        <li><a href="#shop?freeShipping=true">Free shipping</a></li>
+        <li><a href="#shop?sort=popular">Most popular</a></li>
+        <li><a href="#categories">All categories</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© FORMA. Fictional store. Test payments only.</span>
+    <span class="footer-dev"><a href="#lab" id="lab-link">QA laboratory</a> · <a href="/api/openapi.json" target="_blank" rel="noreferrer">API specification</a> · v2.0</span>
+  </div>
+</footer>
 <dialog id="dialog"><div id="dialog-content"></div></dialog>
-<div id="toast" role="status" aria-live="polite"></div>
-</body></html>
+<div id="notifications" class="notifications" aria-label="Notifications"></div>
+</body>
+</html>

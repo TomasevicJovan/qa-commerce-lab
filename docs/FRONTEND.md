@@ -8,19 +8,26 @@ The framework-free approach keeps DOM behavior visible to QA engineers and allow
 
 | File | Responsibility |
 |---|---|
-| `public/index.html` | Environment banner, navigation, main mount, shared modal and toast |
-| `public/style.css` | Tokens, store layout, forms, dialogs, QA panel and responsive breakpoints |
+| `public/index.html` | Header (brand, search, wishlist, account menu, bag), navigation row, promotion bar, footer, main mount, shared modal and toast |
+| `public/style.css` | Tokens, header, carousels, cards, help pages, footer, forms, dialogs, QA panel and responsive breakpoints |
+| `public/help/*.png` | Screenshots used on the How to shop online help page |
 | `public/app.js` | API wrapper, route rendering, session/cart state, checkout and QA interactions |
 
 ## Routes
 
 | Hash route | View |
 |---|---|
-| `#shop` or empty | Product collection |
+| `#home` or empty | Home page with four product shelves (carousels) |
+| `#categories` | All categories page |
+| `#shop?q=&category=&subcategory=&deal=&freeShipping=&sort=&page=` | Filtered product listing, 8 per page; every parameter is optional |
+| `#checkout` | Checkout page: address, saved/new card or wallet, discount code, summary |
+| `#order/<id>` | Order page with a live status banner and timeline |
+| `#wishlist` | Signed-in customer's wishlist |
 | `#orders` | Customer orders with status histories |
-| `#lab` | Scenario controls, service health and latest 100 mirrored events |
+| `#help/<page>` | Shopping help: `notices`, `delivery-and-payment`, `test-cards`, `returns`, `faq`, `how-to-shop` |
+| `#lab` | Scenario controls, service health and latest 100 mirrored events (linked only from the footer) |
 
-Hash routing needs no server-side route fallback. Navigation closes the shared dialog. Unknown hash routes fall back to the collection. The account and bag controls are available from every page.
+Hash routing needs no server-side route fallback. Navigation closes the shared dialog and any open menu. Unknown hash routes fall back to the home page; unknown help pages fall back to the FAQ. The account and bag controls are available from every page.
 
 ## State and API integration
 
@@ -61,6 +68,14 @@ The settings form patches global configuration only when Apply scenario is click
 | Product identity | named article, heading, `data-product` | remains available for context |
 | Button name | `Add to bag +` on every card | same repeated name |
 | Order status | `data-testid="order-status"` scoped to order | unchanged |
+| Wishlist heart | `data-wish="p1"`, `aria-pressed`, name "Add/Remove <product> to/from wishlist" | unchanged |
+| Carousel | track `#carousel-<shelf>` with `data-position`; arrows `data-carousel-prev/next="<shelf>"` | unchanged |
+| Shelf | `section[data-shelf="black-friday|popular|free-shipping|workspace"]` | unchanged |
+| Menus | `#categories-toggle`/`#categories-menu`, `#account`/`#account-menu` with `aria-expanded` | unchanged |
+| Mega menu | categories `[data-top="Electronics"]`, subcategory panel `#mega-panel` | unchanged |
+| Checkout | form `#checkout-form`; radios `name="payment"` with values `saved:<cardId>`, `new`, `wallet`; card inputs `holder`, `number`, `expiry`, `cvc`; errors `#error-<field>`; `.place-order` | unchanged |
+| Order page | `#order-banner [data-status]`, `.timeline li[data-status]`, `#retry-order` | unchanged |
+| Notifications | `#notifications .notification[data-type="success|error|warning|info"]` | unchanged |
 
 Dynamic identifiers change on **rerender**, not continuously on a timer. Live locators should re-query after search, sorting, filtering or navigation. Cached DOM element handles can become detached. Semantic labels intentionally remain available so challenges can be solved robustly rather than by guessing UUIDs.
 
@@ -78,11 +93,11 @@ page.locator(`[data-order-id="${orderId}"]`).getByTestId('order-status');
 page.getByLabel('Discount code');
 ```
 
-This version includes pagination, debounced search, delayed rendering, repeated labels, dynamic attributes, replaced nodes, native dropdowns and modal forms. It does not yet include virtual scrolling, shadow DOM, iframe checkout, custom date pickers or drag-and-drop. Those are sensible future challenge modules, not hidden existing features.
+This version includes carousels, dropdown menus, an auto-rotating promotion bar with pause, toggle buttons with `aria-pressed`, deep-linkable filters, pagination, debounced search, delayed rendering, repeated labels, dynamic attributes, replaced nodes, native dropdowns and modal forms. It does not yet include virtual scrolling, shadow DOM, iframe checkout, custom date pickers or drag-and-drop. Those are sensible future challenge modules, not hidden existing features.
 
 ## Accessibility and responsive behavior
 
-Navigation is named, buttons and inputs have labels, cards are named articles, dialogs use native modal behavior, error areas use alerts, and toasts use a live status region. No UI state relies on hover alone. Desktop uses three product columns; screens below 600 px use two and stack the hero/header. Focus outlines are retained. Native dialogs provide focus containment and Escape behavior.
+Navigation is named, buttons and inputs have labels, cards are named articles, dialogs use native modal behavior, error areas use alerts, and toasts use a live status region. No UI state relies on hover alone. Grids use four product columns on desktop, three below 1100 px and two below 850 px. Carousels show 4, 3, 2 or 1 products depending on width. Below 850 px the search moves to its own row and the navigation row scrolls horizontally. The promotion bar can be paused (WCAG 2.2.2). Focus outlines are retained. Native dialogs provide focus containment and Escape behavior.
 
 Browser validation checked a 1440 px desktop and a 390 px mobile viewport with no horizontal overflow. This is a layout check rather than a full accessibility audit. Use keyboard-only and screen-reader passes as additional exercises.
 

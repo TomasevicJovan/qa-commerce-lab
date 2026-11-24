@@ -66,7 +66,8 @@ This layout favors inspectability over query efficiency. JSON snapshots, unbound
   "data": {
     "items": [{"productId":"p1","quantity":1,"name":"Arc Wireless Headphones","unitPrice":12900}],
     "total": 13600,
-    "paymentMethod": "test-card"
+    "paymentMethod": "card",
+    "payment": {"method":"card","brand":"visa","last4":"4242","savedCardId":"card-demo-visa","outcome":"approve"}
   },
   "createdAt": "2026-10-28T18:00:00.000Z"
 }

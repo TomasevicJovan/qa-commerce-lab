@@ -61,7 +61,7 @@ The first run takes longer while images and dependencies download. Wait for star
 ### 4. Open the app
 
 - Storefront: **http://localhost:3000**
-- QA laboratory: **http://localhost:3000/#lab**
+- QA laboratory: **http://localhost:3000/#lab** (also linked in small print at the bottom of the footer)
 - OpenAPI specification: **http://localhost:3000/api/openapi.json**
 - Service status: **http://localhost:3000/api/lab/status**
 
@@ -70,6 +70,8 @@ In the QA laboratory, confirm **KAFKA TRANSPORT** and healthy services.
 | Demo email | Demo password |
 |---|---|
 | `qa@example.com` | `Testing123!` |
+
+Checkout accepts ten approved test cards (for example `4242 4242 4242 4242`, any future expiry, any CVC); every other valid card number is declined. The demo account already has saved cards for each outcome. See [Business rules](docs/BUSINESS.md) (CF-14, CF-15).
 
 You can register fictional customers through the sign-in dialog. Use separate browser profiles or incognito windows for two-customer scenarios.
 

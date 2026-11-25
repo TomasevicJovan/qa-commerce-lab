@@ -29,16 +29,19 @@ const server=createServer(async(req,res)=>{try {
       if (now-entry.start>=10000) {entry.start=now;entry.count=0;} entry.count++; limits.set(key,entry);
       if (entry.count>12) {res.setHeader('Retry-After',String(Math.max(1,Math.ceil((10000-(now-entry.start))/1000))));fail(429,'Scenario rate limit: 12 requests per 10 seconds');}
     }
-    const service=path.startsWith('/api/auth/')?'identity':path.startsWith('/api/products')?'catalog':path.startsWith('/api/inventory')?'inventory':path.startsWith('/api/payments/')?'payments':(path.startsWith('/api/cart') || path.startsWith('/api/orders'))?'orders':null;
+    const service=path.startsWith('/api/auth/')?'identity':path.startsWith('/api/products')?'catalog':path.startsWith('/api/inventory')?'inventory':path.startsWith('/api/payments/')?'payments':(path.startsWith('/api/cart') || path.startsWith('/api/orders') || path==='/api/wishlist' || path.startsWith('/api/wishlist/') || path==='/api/cards' || path.startsWith('/api/cards/'))?'orders':null;
     if (!service) fail(404,'Endpoint not found');
     const input=['GET','HEAD'].includes(req.method)?undefined:JSON.stringify(await body(req));
     const upstream=await fetch(url(service)+req.url,{method:req.method,body:input,headers:{'Content-Type':'application/json',authorization:req.headers.authorization || '','Idempotency-Key':req.headers['idempotency-key'] || ''},signal:AbortSignal.timeout(10000)});
     res.writeHead(upstream.status,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(await upstream.text());
   }
   const files={'/':'index.html','/app.js':'app.js','/style.css':'style.css'};
+  // Help-page screenshots: a fixed folder and a strict file-name pattern, so no path traversal is possible.
+  if (/^\/help\/[a-z0-9-]+\.png$/.test(path)) files[path]=path.slice(1);
   if (req.method!=='GET' || !files[path]) fail(404,'Not found');
-  const types={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
+  const types={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8',png:'image/png'};
+  const file=await readFile(publicDir+files[path]).catch(()=>fail(404,'Not found'));
   res.writeHead(200,{'Content-Type':types[files[path].split('.').pop()],'X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'",'Cache-Control':'no-store'});
-  res.end(await readFile(publicDir+files[path]));
+  res.end(file);
 }catch(e){json(res,e.status || 503,{error:e.status?e.message:'A backend service is unavailable. Check service status.'});}});
 server.listen(ports.gateway+basePort,host,()=>console.log(`Storefront ready: ${url('gateway')}`));

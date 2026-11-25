@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "QA Commerce Lab API",
-    "version": "1.0.0",
+    "version": "3.0.0",
     "description": "Local training APIs. QA controls intentionally have no authentication. Do not expose this laboratory publicly."
   },
   "servers": [
@@ -69,6 +69,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -87,6 +91,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -105,6 +113,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -123,6 +135,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -141,6 +157,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -159,6 +179,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -177,6 +201,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -247,6 +275,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -265,6 +297,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -283,6 +319,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -301,6 +341,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -319,6 +363,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -337,6 +385,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -355,6 +407,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -400,6 +456,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -418,6 +478,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -436,6 +500,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -454,6 +522,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -472,6 +544,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -490,6 +566,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -508,6 +588,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -561,6 +645,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -579,6 +667,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -597,6 +689,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -615,6 +711,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -633,6 +733,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -651,6 +755,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -669,6 +777,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -680,7 +792,7 @@
     },
     "/products": {
       "get": {
-        "summary": "Search and paginate products",
+        "summary": "Search, filter and paginate products",
         "description": "",
         "tags": [
           "products"
@@ -691,7 +803,8 @@
             "in": "query",
             "name": "q",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Case-insensitive substring of product name, category or subcategory"
             }
           },
           {
@@ -700,10 +813,70 @@
             "schema": {
               "type": "string",
               "enum": [
+                "Electronics",
+                "Home & Living",
+                "Office & School",
+                "Sports & Outdoors",
+                "Travel & Bags",
+                "Garden",
+                "Kids & Toys",
+                "Beauty & Health",
+                "Pets"
+              ],
+              "description": "Top-level category"
+            }
+          },
+          {
+            "in": "query",
+            "name": "subcategory",
+            "schema": {
+              "type": "string",
+              "enum": [
                 "Audio",
+                "Gaming",
+                "Phones & Tablets",
+                "Smart Home",
+                "Computer Accessories",
+                "Kitchen",
+                "Lighting",
+                "Decor",
+                "Textiles",
                 "Workspace",
-                "Travel",
-                "Home"
+                "Stationery",
+                "Fitness",
+                "Outdoor & Camping",
+                "Cycling",
+                "Bags & Backpacks",
+                "Travel Accessories",
+                "Plants & Seeds",
+                "Garden Tools",
+                "Toys & Games",
+                "Learning",
+                "Personal Care",
+                "Wellness",
+                "Dogs",
+                "Cats"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "deal",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "black-friday"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "freeShipping",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "true",
+                "false"
               ]
             }
           },
@@ -713,7 +886,9 @@
             "schema": {
               "type": "string",
               "enum": [
-                "price"
+                "price",
+                "price-desc",
+                "popular"
               ]
             }
           },
@@ -783,6 +958,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -801,6 +980,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -819,6 +1002,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -837,6 +1024,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -855,6 +1046,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -873,6 +1068,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -891,6 +1090,225 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/categories": {
+      "get": {
+        "summary": "Category tree with product counts",
+        "description": "",
+        "tags": [
+          "products"
+        ],
+        "security": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "productCount",
+                      "subcategories"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "productCount": {
+                        "type": "integer"
+                      },
+                      "subcategories": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "name",
+                            "popular",
+                            "productCount"
+                          ],
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "popular": {
+                              "type": "boolean"
+                            },
+                            "productCount": {
+                              "type": "integer"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -941,6 +1359,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -959,6 +1381,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -977,6 +1403,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -995,6 +1425,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1013,6 +1447,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1031,6 +1469,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1049,6 +1491,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1093,6 +1539,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1111,6 +1561,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1129,6 +1583,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1147,6 +1605,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1165,6 +1627,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1183,6 +1649,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1201,6 +1671,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1249,6 +1723,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1267,6 +1745,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1285,6 +1767,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1303,6 +1789,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1321,6 +1811,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1339,6 +1833,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1357,6 +1855,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1425,6 +1927,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1443,6 +1949,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1461,6 +1971,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1479,6 +1993,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1497,6 +2015,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1515,6 +2037,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1533,6 +2059,1154 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wishlist": {
+      "get": {
+        "summary": "Read current customer wishlist, newest first",
+        "description": "",
+        "tags": [
+          "wishlist"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WishlistItem"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wishlist/{productId}": {
+      "put": {
+        "summary": "Add a product to the wishlist (idempotent)",
+        "description": "",
+        "tags": [
+          "wishlist"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WishlistItem"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Remove a product from the wishlist (idempotent)",
+        "description": "",
+        "tags": [
+          "wishlist"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WishlistItem"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cards": {
+      "get": {
+        "summary": "List saved cards (never the full number)",
+        "description": "",
+        "tags": [
+          "cards"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Card"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Validate and save a card (max 5)",
+        "description": "201 for a new card; 200 when the same brand, last four digits and expiry are already saved. Validation errors return 422 with field.",
+        "tags": [
+          "cards"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCard"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Card already saved",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Card"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Card"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cards/{cardId}": {
+      "delete": {
+        "summary": "Remove a saved card",
+        "description": "",
+        "tags": [
+          "cards"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cardId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Card"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1581,6 +3255,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1599,6 +3277,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1617,6 +3299,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1635,6 +3321,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1653,6 +3343,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1671,6 +3365,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1689,6 +3387,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1762,6 +3464,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1780,6 +3486,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1798,6 +3508,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1816,6 +3530,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1834,6 +3552,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1852,6 +3574,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1870,6 +3596,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1924,6 +3654,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1942,6 +3676,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1960,6 +3698,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1978,6 +3720,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -1996,6 +3742,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2014,6 +3764,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2032,6 +3786,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2081,6 +3839,15 @@
                     "id": {
                       "type": "string"
                     },
+                    "method": {
+                      "type": "string"
+                    },
+                    "brand": {
+                      "type": "string"
+                    },
+                    "last4": {
+                      "type": "string"
+                    },
                     "status": {
                       "type": "string",
                       "enum": [
@@ -2094,7 +3861,8 @@
                     },
                     "reason": {
                       "type": "string",
-                      "nullable": true
+                      "nullable": true,
+                      "description": "card_declined, decline or timeout"
                     },
                     "createdAt": {
                       "type": "string",
@@ -2117,6 +3885,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2135,6 +3907,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2153,6 +3929,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2171,6 +3951,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2189,6 +3973,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2207,6 +3995,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2225,6 +4017,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2266,6 +4062,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2284,6 +4084,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2302,6 +4106,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2320,6 +4128,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2338,6 +4150,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2356,6 +4172,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2374,6 +4194,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2423,6 +4247,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2441,6 +4269,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2459,6 +4291,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2477,6 +4313,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2495,6 +4335,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2513,6 +4357,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2531,6 +4379,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2572,6 +4424,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2590,6 +4446,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2608,6 +4468,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2626,6 +4490,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2644,6 +4512,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2662,6 +4534,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2680,6 +4556,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2764,6 +4644,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2782,6 +4666,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2800,6 +4688,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2818,6 +4710,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2836,6 +4732,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2854,6 +4754,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2872,6 +4776,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2916,6 +4824,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2934,6 +4846,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2952,6 +4868,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2970,6 +4890,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -2988,6 +4912,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -3006,6 +4934,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -3024,6 +4956,10 @@
                   "properties": {
                     "error": {
                       "type": "string"
+                    },
+                    "field": {
+                      "type": "string",
+                      "description": "Name of the invalid input field, when one field caused the error"
                     }
                   }
                 }
@@ -3091,7 +5027,12 @@
           "id",
           "name",
           "category",
+          "subcategory",
           "price",
+          "compareAtPrice",
+          "deal",
+          "freeShipping",
+          "popularity",
           "stock",
           "icon",
           "color",
@@ -3105,11 +5046,36 @@
             "type": "string"
           },
           "category": {
+            "type": "string",
+            "description": "Top-level category"
+          },
+          "subcategory": {
             "type": "string"
           },
           "price": {
             "type": "integer",
-            "description": "USD cents"
+            "description": "USD cents charged at checkout (Black Friday price when on deal)"
+          },
+          "compareAtPrice": {
+            "type": "integer",
+            "nullable": true,
+            "description": "Pre-sale price in cents for deals, otherwise null"
+          },
+          "deal": {
+            "type": "string",
+            "nullable": true,
+            "enum": [
+              "black-friday",
+              null
+            ]
+          },
+          "freeShipping": {
+            "type": "boolean"
+          },
+          "popularity": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
           },
           "stock": {
             "type": "integer",
@@ -3123,6 +5089,99 @@
           },
           "description": {
             "type": "string"
+          }
+        }
+      },
+      "Card": {
+        "type": "object",
+        "required": [
+          "id",
+          "holder",
+          "brand",
+          "last4",
+          "expMonth",
+          "expYear",
+          "expired",
+          "createdAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "holder": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string",
+            "enum": [
+              "visa",
+              "mastercard",
+              "amex"
+            ]
+          },
+          "last4": {
+            "type": "string",
+            "pattern": "^\\d{4}$"
+          },
+          "expMonth": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "expYear": {
+            "type": "integer"
+          },
+          "expired": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewCard": {
+        "type": "object",
+        "required": [
+          "holder",
+          "number",
+          "expiry",
+          "cvc"
+        ],
+        "properties": {
+          "holder": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 100
+          },
+          "number": {
+            "type": "string",
+            "description": "13-19 digits, spaces allowed, Luhn-valid Visa, Mastercard or Amex"
+          },
+          "expiry": {
+            "type": "string",
+            "pattern": "^\\d{2}/\\d{2}$",
+            "description": "MM/YY, not expired"
+          },
+          "cvc": {
+            "type": "string",
+            "description": "3 digits, 4 for Amex. Never stored."
+          }
+        }
+      },
+      "WishlistItem": {
+        "type": "object",
+        "required": [
+          "productId",
+          "addedAt"
+        ],
+        "properties": {
+          "productId": {
+            "type": "string"
+          },
+          "addedAt": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
@@ -3191,9 +5250,20 @@
           "paymentMethod": {
             "type": "string",
             "enum": [
-              "test-card",
+              "card",
               "test-wallet"
-            ]
+            ],
+            "description": "card needs exactly one of savedCardId or card. A Mastercard takes 10% off after the coupon."
+          },
+          "savedCardId": {
+            "type": "string"
+          },
+          "card": {
+            "$ref": "#/components/schemas/NewCard"
+          },
+          "saveCard": {
+            "type": "boolean",
+            "description": "Save the new card when the order is accepted"
           },
           "coupon": {
             "type": "string",
@@ -3217,8 +5287,11 @@
           "items",
           "address",
           "paymentMethod",
+          "payment",
           "coupon",
           "subtotal",
+          "couponDiscount",
+          "paymentDiscount",
           "discount",
           "shipping",
           "total",
@@ -3242,7 +5315,8 @@
                 "productId",
                 "name",
                 "quantity",
-                "unitPrice"
+                "unitPrice",
+                "freeShipping"
               ],
               "properties": {
                 "productId": {
@@ -3256,6 +5330,9 @@
                 },
                 "unitPrice": {
                   "type": "integer"
+                },
+                "freeShipping": {
+                  "type": "boolean"
                 }
               }
             }
@@ -3300,14 +5377,41 @@
           "paymentMethod": {
             "type": "string"
           },
+          "payment": {
+            "type": "object",
+            "required": [
+              "method"
+            ],
+            "properties": {
+              "method": {
+                "type": "string"
+              },
+              "brand": {
+                "type": "string"
+              },
+              "last4": {
+                "type": "string"
+              },
+              "savedCardId": {
+                "type": "string"
+              }
+            }
+          },
           "coupon": {
             "type": "string"
           },
           "subtotal": {
             "type": "integer"
           },
-          "discount": {
+          "couponDiscount": {
             "type": "integer"
+          },
+          "paymentDiscount": {
+            "type": "integer"
+          },
+          "discount": {
+            "type": "integer",
+            "description": "couponDiscount + paymentDiscount"
           },
           "shipping": {
             "type": "integer"

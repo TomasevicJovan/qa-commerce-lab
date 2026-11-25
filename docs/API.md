@@ -11,10 +11,17 @@ Base URL: **http://localhost:3000/api**. OpenAPI 3.0.3 is available as `docs/ope
 | GET | `/auth/me` | Bearer | Current account |
 | POST | `/auth/logout` | Bearer | Revoke current token |
 | GET | `/products` | Public | Search, filter, sort, paginate |
+| GET | `/products/categories` | Public | Category tree: categories, subcategories, popular flag, product counts |
 | GET | `/products/{productId}` | Public | Authoritative product detail |
 | GET | `/inventory` | Public | Available stock by product ID |
 | GET | `/cart` | Bearer | Current account's cart |
 | PUT | `/cart` | Bearer | Replace entire cart |
+| GET | `/wishlist` | Bearer | Own wishlist, newest first |
+| PUT | `/wishlist/{productId}` | Bearer | Add product to wishlist (idempotent) |
+| DELETE | `/wishlist/{productId}` | Bearer | Remove product from wishlist (idempotent) |
+| GET | `/cards` | Bearer | Own saved cards (brand, last4, expiry, holder; never the full number) |
+| POST | `/cards` | Bearer | Validate and save a card (max 5) |
+| DELETE | `/cards/{cardId}` | Bearer | Remove a saved card |
 | GET | `/orders` | Bearer | Own orders, newest first |
 | POST | `/orders` | Bearer + Idempotency-Key | Accept checkout |
 | GET | `/orders/{orderId}` | Bearer | Own order and state history |
@@ -30,11 +37,14 @@ Business requests use `Content-Type: application/json`. Protected requests use `
 
 ### Search parameters
 
-`GET /products?q=speaker&category=Audio&sort=price&page=1&limit=6`
+`GET /products?q=speaker&category=Electronics&subcategory=Audio&deal=black-friday&freeShipping=true&sort=popular&page=1&limit=6`
 
-- `q`: case-insensitive product-name substring; empty means all names.
-- `category`: exact category match (`Audio`, `Workspace`, `Travel`, `Home`); unknown values produce an empty result.
-- `sort=price`: ascending price; omitted/other values use seed order.
+- `q`: case-insensitive substring of the product name, category or subcategory, trimmed; empty means all.
+- `category`: exact, case-sensitive top-level category (see `GET /products/categories`); unknown values produce an empty result.
+- `subcategory`: exact, case-sensitive subcategory; unknown values produce an empty result. It can be used with or without `category`.
+- `deal=black-friday`: only Black Friday products. Any other value returns 422.
+- `freeShipping=true|false`: only products with or without free shipping. Any other value returns 422.
+- `sort`: `price` (ascending), `price-desc` (descending) or `popular` (popularity descending); omitted or other values use seed order.
 - `page`: positive integer, default 1.
 - `limit`: integer 1–50, default 6.
 - Result: `{ "items": [...], "total": 9, "page": 1, "limit": 6 }`. Total is the filtered total, not just the page size.
@@ -65,7 +75,8 @@ Invoke-RestMethod "$baseUrl/cart" -Method Put -Headers $authHeaders -ContentType
 # Capture exact checkout body and idempotency key for safe retries
 $checkoutBody = @{
   address=@{name='Alex Tester';line1='12 Test Avenue';city='Sarajevo';postalCode='71000';country='BA'}
-  paymentMethod='test-card'
+  paymentMethod='card'
+  savedCardId='card-demo-visa'
   coupon='SAVE10'
   expectedTotal=12310
 } | ConvertTo-Json -Depth 10 -Compress
@@ -92,6 +103,36 @@ $replayed.id -eq $order.id
 
 # Inspect events correlated to the order
 Invoke-RestMethod "$baseUrl/lab/events" | Where-Object orderId -eq $order.id
+```
+
+## Wishlist and new pricing examples
+
+```powershell
+# Save, list and remove a wishlist product (uses $session from the login step above)
+Invoke-RestMethod -Method Put -Uri "$baseUrl/wishlist/p16" -Headers @{ Authorization = "Bearer $($session.token)" }
+Invoke-RestMethod -Uri "$baseUrl/wishlist" -Headers @{ Authorization = "Bearer $($session.token)" }
+Invoke-RestMethod -Method Delete -Uri "$baseUrl/wishlist/p16" -Headers @{ Authorization = "Bearer $($session.token)" }
+
+# Black Friday products, most popular first
+Invoke-RestMethod -Uri "$baseUrl/products?deal=black-friday&sort=popular&limit=50"
+```
+
+### Paying by card
+
+`paymentMethod` is `card` or `test-wallet`. A card payment sends **exactly one** of:
+
+```json
+{ "paymentMethod": "card", "savedCardId": "card-demo-mastercard", ... }
+{ "paymentMethod": "card", "card": { "holder": "Jane Tester", "number": "4242 4242 4242 4242", "expiry": "12/29", "cvc": "123" }, "saveCard": true, ... }
+```
+
+Validation errors return 422 with the failing field, for example `{ "error": "This card has expired", "field": "expiry" }`. A valid card is accepted with 202; only the ten approved test numbers (docs/BUSINESS.md, CF-15) are then approved. Every other valid number ends as a failed payment with reason `card_declined` and a cancelled order. A Mastercard takes 10% off after the coupon, so `expectedTotal` must include it; otherwise the API answers 409 with the correct total. The order response contains `payment` (method, brand, last4, savedCardId), `couponDiscount`, `paymentDiscount` and `discount`.
+
+```powershell
+# Saved cards of the signed-in customer, then a declined new card
+Invoke-RestMethod -Uri "$baseUrl/cards" -Headers @{ Authorization = "Bearer $($session.token)" }
+$bad = @{ holder='Jane Tester'; number='4000 0000 0000 0002'; expiry='12/29'; cvc='123' } | ConvertTo-Json
+Invoke-RestMethod -Method Post -Uri "$baseUrl/cards" -Headers @{ Authorization = "Bearer $($session.token)" } -ContentType 'application/json' -Body $bad
 ```
 
 ## Combine UI and API
